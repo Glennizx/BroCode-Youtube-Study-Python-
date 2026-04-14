@@ -6,7 +6,7 @@
 
 
 
-#Example 2
+#Example 1
 age = int(input("Enter your age: "))
 
 if age >= 100:
@@ -50,7 +50,7 @@ else:
     print("This items is NOT for sale")
 
 
-#Exercise 4
+#Exercise 5
 online = True
 if online:
     print("The user is online")
