@@ -1,3 +1,25 @@
+#Exercise 1:
+
+# Validate user input exercise
+# 1. username is no more than 12 characters
+# 2. username must not contain spaces
+# 3. username must not contain digits
+
+username = input("Enter a username: ")
+
+if len(username) > 12:
+    print("Your username can't be more than 12 characters")
+
+elif not username.find(" ") == -1:
+    print("Your username can't contain spaces")
+
+elif not username.isalpha():
+    print("Your username can't contain digits")
+
+else:
+    print(f"Welcome {username}!")
+
+
 #Example 1
 name = input("Enter your full name: ")
 result =len(name)
@@ -31,6 +53,20 @@ name = input("Enter your full name: ")
 name = name.capitalize() #capitalizes the first letter of the name and makes the rest lowercase
 print(name)
 
+#Example 6
+phone_number = input("Enter your phone number: ")
+
+result =phone_number.count("-") #counts the number of times the character "-" appears in the phone number
+print(result)
+
+
+#Example 7
+phone_number = input("Enter your phone number: ")
+phone_number = phone_number.replace("-"," ")
+print(phone_number)
+
+
+
 
 #NOTE: Other string methods
 name = input("Enter your full name: ")
@@ -38,8 +74,8 @@ name = name.upper() #makes all letters uppercase
 name = name.lower() #makes all letters lowercase
 name = name.isupper() #returns True if all letters are uppercase, False otherwise
 name = name.islower() #returns True if all letters are lowercase, False otherwise
-name = name.isalpha() #returns True if all characters are letters, False otherwise
-name = name.isalnum() #returns True if all characters are letters or numbers, False
+name = name.isalpha() #returns True if all characters are letters or Alphabetical characters, False otherwise
+name = name.isalnum() #returns True if all characters are letters or numbers, False otherwise
 name = name.replace(" ", "_") #replaces all spaces with underscores
 name = name.strip() #removes all leading and trailing spaces
 name = name.split() #splits the name into a list of words
@@ -53,3 +89,7 @@ name = name.isdigit() #returns True if all characters are digits, False otherwis
 name = name.isdecimal() #returns True if all characters are decimal characters, False otherwise
 name = name.isnumeric() #returns True if all characters are numeric characters, False otherwise
 #print(name)
+
+#Comprehensive list of string methods: https://www.w3schools.com/python/python_ref_string.asp
+#print(help(str)) #prints the documentation for the string class, including all methods and their descriptions
+
