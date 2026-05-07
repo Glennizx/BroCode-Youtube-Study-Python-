@@ -1,0 +1,1 @@
+# while loop = execuse some code WHILE some condition remains true
